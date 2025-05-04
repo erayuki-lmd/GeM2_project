@@ -14,6 +14,7 @@
     width:100vw;
     height:54vw;
     background-color: #222;
+    transition:1s;
 }
 
 #TitleScrean > #Title_1{
@@ -22,6 +23,7 @@
     left:5vw;
     font-size: 4vw;
     color:white;
+    transition:1s;
 }
 
 #TitleScrean > #Title_2{
@@ -30,6 +32,7 @@
     left:44.5vw;
     font-size: 4vw;
     color:white;
+    transition:1s;
 }
 
 #TitleScrean > #Title_3{
@@ -38,6 +41,7 @@
     left:58vw;
     font-size: 4vw;
     color:white;
+    transition:1s;
 }
 
 #TitleScrean > #Title_4{
@@ -46,6 +50,7 @@
     left:79.3vw;
     font-size: 4vw;
     color:white;
+    transition:1s;
 }
 
 #TitleScrean > #Title_5{
@@ -56,6 +61,7 @@
     font-size: 4vw;
     text-align:center; 
     color:white;
+    transition:1s;
 }
 
 #TitleScrean > #Title_6{
@@ -66,6 +72,7 @@
     font-size: 4vw;
     text-align:center; 
     color:white;
+    transition:1s;
 }
 
 #TitleScrean > #Title_G1{
@@ -73,7 +80,8 @@
     top:15%;
     left:5vw;
     font-size: 4vw;
-    color:greenyellow;
+    color:transparent;
+    transition:1s;
 }
 
 #TitleScrean > #Title_G2{
@@ -81,7 +89,8 @@
     top:15%;
     left:44.5vw;
     font-size: 4vw;
-    color:greenyellow;
+    color:transparent;
+    transition:1s;
 }
 
 #TitleScrean > #Title_G3{
@@ -89,7 +98,8 @@
     top:15%;
     left:58vw;
     font-size: 4vw;
-    color:greenyellow;
+    color:transparent;
+    transition:1s;
 }
 
 #TitleScrean > #Title_G4{
@@ -97,6 +107,59 @@
     top:15%;
     left:79.3vw;
     font-size: 4vw;
-    color:greenyellow;
+    color:transparent;
+    transition:1s;
 }
 
+#TitleScrean > #Title_G5{
+    position:absolute;
+    top:20%;
+    left:59.3vw;
+    font-size: 5vw;
+    color:transparent;
+    transition:2s;
+}
+
+#TitleScrean > #TitleButtonSpace{
+    position:absolute;
+    display: flex;
+    top:55%;
+    left:15%;
+    height:30%;
+    width:70%;
+    background-color: transparent;
+    transition:2s;
+}
+
+#TitleButtonSpace > .TitleButton{
+    position:relative;
+    margin-left:5%;
+    margin-right:5%;
+    height:100%;
+    width:calc(70% / 3);
+    background-color: #222;
+    color:transparent;
+    transition:2s;
+}
+
+.TitleButton > .TitleButtonIcon{
+    position:absolute;
+    font-size:8vw;
+    top:0%;
+    left:0%;
+    height:70%;
+    width:100%;
+    text-align: center;
+    transition:2s;
+}
+
+.TitleButton > .TitleButtonText{
+    position:absolute;
+    font-size:3vw;
+    top:70%;
+    left:0%;
+    height:30%;
+    width:100%;
+    text-align: center;
+    transition:2s;
+}

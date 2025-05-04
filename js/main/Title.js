@@ -1,4 +1,5 @@
-const word_speed=70
+const word_speed=40
+const gem2_color="greenyellow"
 
 function WritingString(object,message){
     for (let i = 0; i < message.length; i++){
@@ -14,11 +15,24 @@ function WritingString(object,message){
     }
 }
 
-// WritingString("#Title_1","abcdefg")
+function Gem2Centering(){
+    $('.GeMText').css('color',gem2_color);
+    setTimeout(() => {
+        $('.MainText').css('color','Transparent');
+    }, 500);
+    setTimeout(() => {
+        $('.Ge').css({'font-size':'10vw','left':'37.5vw','top':'20%','transition':'2s'})
+        $('.M').css({'font-size':'10vw','left':'50vw','top':'20%','transition':'2s'})
+    }, 1000);
+    setTimeout(() => {
+        $('#Title_G5').css({'color':gem2_color})
+    }, 3000);
+}
 
 
 async function Starting(){
-    title_condition =[
+    // WritingTitle
+    let title_condition =[
         ["#Title_1","Generalizing Stylized",0],
         ["#Title_2","Motion",0],
         ["#Title_3","Generation",0],
@@ -26,22 +40,32 @@ async function Starting(){
         ["#Title_5","by Introducing Metadata-Independent Learning",0],
         ["#Title_6","and Unified Multiple Motion Dataset",0]
     ]
+    let second_start=title_condition[0][1].length+1
     for (let i=1; i<title_condition.length; i++){
         title_condition[i][2] = title_condition[i-1][2] + title_condition[i-1][1].length+1;
+        second_start += title_condition[i][1].length+1
     }
     for (let k of title_condition){
         setTimeout(() => {
             WritingString(k[0],k[1])
         }, k[2]*word_speed);
     }
+    
+    // CenteringGeM2
+    setTimeout(() => {
+        Gem2Centering("#Title_G1")
+    }, second_start*word_speed);
+    
+    // CenteringGeM2
+    setTimeout(() => {
+        $(".TitleButton").css("color",gem2_color);
+    }, second_start*word_speed+4000);
+
+
+    setTimeout(() => {
+        $(".TitleClass").css("transition","0s");
+        $(".TitleDel").hide();
+    }, second_start*word_speed+5000);
 }
 
 window.onload = Starting;
-
-// const messages = ["俺の人生", "波乱万丈", "海より深く", "空より広く", "背中で語る！"];
-
-// for (let i = 0; i < messages.length; i++) {
-//   setTimeout(() => {
-//     console.log(messages[i]);
-//   }, i * 1000); // i秒ごとに実行（1秒 = 1000ミリ秒）
-// }
