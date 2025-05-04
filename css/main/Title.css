@@ -1,0 +1,102 @@
+#TitleScreanBack{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    background-color: #229;
+}
+
+#TitleScrean{
+    position:absolute;
+    top:calc(50vh - 27vw);
+    left:0;
+    width:100vw;
+    height:54vw;
+    background-color: #222;
+}
+
+#TitleScrean > #Title_1{
+    position:absolute;
+    top:15%;
+    left:5vw;
+    font-size: 4vw;
+    color:white;
+}
+
+#TitleScrean > #Title_2{
+    position:absolute;
+    top:15%;
+    left:44.5vw;
+    font-size: 4vw;
+    color:white;
+}
+
+#TitleScrean > #Title_3{
+    position:absolute;
+    top:15%;
+    left:58vw;
+    font-size: 4vw;
+    color:white;
+}
+
+#TitleScrean > #Title_4{
+    position:absolute;
+    top:15%;
+    left:79.3vw;
+    font-size: 4vw;
+    color:white;
+}
+
+#TitleScrean > #Title_5{
+    position:absolute;
+    top:30%;
+    left:5vw;
+    width:90vw;
+    font-size: 4vw;
+    text-align:center; 
+    color:white;
+}
+
+#TitleScrean > #Title_6{
+    position:absolute;
+    top:45%;
+    left:5vw;
+    width:90vw;
+    font-size: 4vw;
+    text-align:center; 
+    color:white;
+}
+
+#TitleScrean > #Title_G1{
+    position:absolute;
+    top:15%;
+    left:5vw;
+    font-size: 4vw;
+    color:greenyellow;
+}
+
+#TitleScrean > #Title_G2{
+    position:absolute;
+    top:15%;
+    left:44.5vw;
+    font-size: 4vw;
+    color:greenyellow;
+}
+
+#TitleScrean > #Title_G3{
+    position:absolute;
+    top:15%;
+    left:58vw;
+    font-size: 4vw;
+    color:greenyellow;
+}
+
+#TitleScrean > #Title_G4{
+    position:absolute;
+    top:15%;
+    left:79.3vw;
+    font-size: 4vw;
+    color:greenyellow;
+}
+
