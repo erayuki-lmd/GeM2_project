@@ -1,6 +1,6 @@
 :root {
-    --bg_color: #222;
-    --word_color: #EEE;
+    --bg_color: #333;
+    --word_color: #DDD;
     --green_color: rgb(58, 247, 118);
     --pink_color:pink;
   }
@@ -16,19 +16,19 @@ body{
 .SectionTitleSpace{
     position:relative;
     top:0;
-    height:7vw;
+    height:2vw;
     width:100%;
 }
 .SectionTitleSpace > .SectionTitleText{
     position:absolute;
     top:0;
-    height:7vw;
+    height:2vw;
     width:auto;
-    font-size:7vw;
+    font-size:2vw;
     text-align: center;
     line-height: 100%;
     color:var(--pink_color);
-    border-bottom: solid 0.5vw var(--pink_color);
+    border-bottom: solid 0.3vw var(--pink_color);
 }
 
 /* .SectionTitle > .SectionTitleCircle{

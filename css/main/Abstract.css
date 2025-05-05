@@ -1,7 +1,39 @@
 #AbstractScrean{
     position:relative;
-    left:10vw;
-    width:80vw;
+    left:15vw;
+    width:70vw;
     height:auto;
-    /* background-color: brown; */
+}
+
+#AbstractScrean > #AbstractTitle{
+    position:relative;
+    left:2%;
+    width:96%;
+    height:auto;
+    font-size:1.8vw;
+    font-weight: bold;
+    color:var(--word_color);
+    margin-top:2vh;
+}
+
+#AbstractScrean > #AbstractText{
+    position:relative;
+    left:5%;
+    width:93%;
+    height:auto;
+    font-size:1.5vw;
+    color:var(--word_color);
+    opacity:0.8;
+    margin-top:2vh;
+}
+
+#AbstractText > #AbstractLine{
+    position:absolute;
+    left:-3%;
+    top:0;
+    width:1%;
+    height:100%;
+    border-radius: 0.5vw;
+    background-color: var(--word_color);
+    opacity:0.8;
 }
