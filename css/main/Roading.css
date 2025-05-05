@@ -4,11 +4,11 @@
     left:0;
     width:100vw;
     height:100vh;
-    background-color: #222;
+    background-color: var(--bg_color);
 }
 
 #RoadingScrean > #RoadingIcon{
-    color:greenyellow;
+    color:var(--green_color);
     position:absolute;
     height:10vw;
     line-height:10vw;
@@ -19,7 +19,7 @@
 }
 
 #RoadingScrean > #RoadingMessage{
-    color:greenyellow;
+    color:var(--green_color);
     position:absolute;
     height:10vw;
     line-height:10vw;

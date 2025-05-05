@@ -1,5 +1,5 @@
 const word_speed=40
-const gem2_color="greenyellow"
+const gem2_color="var(--green_color)"
 
 function WritingString(object,message){
     for (let i = 0; i < message.length; i++){
