@@ -1,65 +1,57 @@
 <script setup lang="ts">
-import TitleScreen from './components/TitleScreen.vue'
+import TitleScreen from './components/TitleScreen.vue';
+import AbstructScreen from './components/AbstructScreen.vue';
+import ResultScreen from './components/ResultScreen.vue';
+import MovieScreen from './components/MovieScreen.vue';
+import BibtexScreen from './components/BibtexScreen.vue';
 </script>
 
 <template>
   <div id="title">
     <TitleScreen />
   </div>
-  <!-- <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <div id="body">
+    <AbstructScreen />
+    <div id="padding"></div>
+    <ResultScreen />
+    <div id="padding"></div>
+    <MovieScreen />
+    <div id="padding"></div>
+    <BibtexScreen />
+    <div id="padding"></div>
+  </div>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header> -->
-
-  <!-- <main>
-    <TheWelcome />
-  </main> -->
 </template>
 
 <style scoped>
 
+
 #title {
   position: relative;
-  top:100px;
-  left:0px;
   width:90vw;
   height:55vw;
   margin-left:auto;
   margin-right:auto;
+  margin-top:100px;
 }
 
-header {
-  line-height: 1.5;
-  background:pink;
+#body {
+  position: relative;
+  width:80vw;
+  height:100vh;
+  margin-left:auto;
+  margin-right:auto;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+#padding {
+  position:relative;
+  height:100px;
+  width:100%;
 }
 
-@media (min-width: 1024px) {
+@media screen and (orientation: landscape) {
   #title {
-    top: 0px;
-  }
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-    background:red;
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
+    margin-top: 0px;
   }
 }
 </style>

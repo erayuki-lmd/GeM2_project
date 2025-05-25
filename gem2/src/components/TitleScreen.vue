@@ -164,190 +164,190 @@
 
 
 <style scoped>
-#TitleScreanBack{
-    position:relative;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-}
-
-#TitleScreanBack > .Title_1{
-    position:absolute;
-    top:15%;
-    left:2vw;
-    font-size: 4vw;
-}
-
-#TitleScreanBack > .Title_2{
-    position:absolute;
-    top:15%;
-    left:39.5vw;
-    font-size: 4vw;
-}
-
-#TitleScreanBack > .Title_3{
-    position:absolute;
-    top:15%;
-    left:53.3vw;
-    font-size: 4vw;
-}
-
-#TitleScreanBack > .Title_4{
-    position:absolute;
-    top:15%;
-    left:74vw;
-    font-size: 4vw;
-}
-
-#TitleScreanBack > .Title_5{
-    position:absolute;
-    top:30%;
-    left:0vw;
-    width:90vw;
-    font-size: 4vw;
-    text-align:center;
-}
-
-#TitleScreanBack > .Title_6{
-    position:absolute;
-    top:45%;
-    left:0vw;
-    width:90vw;
-    font-size: 4vw;
-    text-align:center;
-}
-
-
-#TitleScreanBack > .Title_Ge{
-    position:absolute;
-    top:15%;
-    left:33.5vw;
-    font-size: 10vw;
-    text-align: center;
-}
-
-#TitleScreanBack > .Title_M{
-    position:absolute;
-    top:15%;
-    left:46vw;
-    font-size: 10vw;
-    text-align:center;
-}
-
-#TitleScreanBack > .Title_Sup{
-    position:absolute;
-    top:15%;
-    left:55.3vw;
-    font-size: 5vw;
-    text-align:center;
-}
-
-
-#TitleScreanBack > #TitleButtonSpace{
-    position:absolute;
-    display: flex;
-    top:45%;
-    left:15%;
-    height:30%;
-    width:70%;
-    background-color: transparent;
-    color: var(--green_color);
-}
-
-#TitleButtonSpace > .TitleButton{
-    position:relative;
-    margin-left:5%;
-    margin-right:5%;
-    height:100%;
-    width:calc(70% / 3);
-    background-color: var(--bg_color);
-}
-
-.TitleButton > .TitleButtonIcon{
-    position:absolute;
-    font-size:8vw;
-    top:0%;
-    left:0%;
-    height:70%;
-    width:100%;
-    text-align: center;
-}
-
-.TitleButton > .TitleButtonText{
-    position:absolute;
-    font-size:3vw;
-    top:70%;
-    left:0%;
-    height:30%;
-    width:100%;
-    text-align: center;
-}
-
-
-.whiteString {
-    color:var(--word_color);
-}
-
-.greenString {
-    color:var(--green_color);
-}
-
-.move-transition {
-    transition: 2s;
-}
-
-
-
-.extract-enter-active,
-.extract-leave-active{
-    transition:2s;
-}
-
-.extract-enter-to,
-.extract-leave-from{
-    opacity:1;
-}
-
-.extract-enter-from,
-.extract-leave-to{
-    opacity:0;
-}
-
-.sup-enter-active{
-    animation-name: appear-sup;
-    animation-duration: 3s;
-}
-
-@keyframes appear-sup {
-    0% {
-        font-size: 0vw;
+    #TitleScreanBack{
+        position:relative;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
     }
-    70%{
-        font-size: 0vw;
-        left:calc(55.3vw - 2.5vw);
+
+    #TitleScreanBack > .Title_1{
+        position:absolute;
+        top:15%;
+        left:2vw;
+        font-size: 4vw;
+    }
+
+    #TitleScreanBack > .Title_2{
+        position:absolute;
+        top:15%;
+        left:39.5vw;
+        font-size: 4vw;
+    }
+
+    #TitleScreanBack > .Title_3{
+        position:absolute;
+        top:15%;
+        left:53.3vw;
+        font-size: 4vw;
+    }
+
+    #TitleScreanBack > .Title_4{
+        position:absolute;
+        top:15%;
+        left:74vw;
+        font-size: 4vw;
+    }
+
+    #TitleScreanBack > .Title_5{
+        position:absolute;
         top:30%;
+        left:0vw;
+        width:90vw;
+        font-size: 4vw;
+        text-align:center;
     }
-    100%{
-        font-size: 5vw;
+
+    #TitleScreanBack > .Title_6{
+        position:absolute;
+        top:45%;
+        left:0vw;
+        width:90vw;
+        font-size: 4vw;
+        text-align:center;
+    }
+
+
+    #TitleScreanBack > .Title_Ge{
+        position:absolute;
+        top:15%;
+        left:33.5vw;
+        font-size: 10vw;
+        text-align: center;
+    }
+
+    #TitleScreanBack > .Title_M{
+        position:absolute;
+        top:15%;
+        left:46vw;
+        font-size: 10vw;
+        text-align:center;
+    }
+
+    #TitleScreanBack > .Title_Sup{
+        position:absolute;
+        top:15%;
         left:55.3vw;
         font-size: 5vw;
-        top:15%;
+        text-align:center;
     }
-}
 
 
-.button-enter-from{
-    opacity:0;
-}
+    #TitleScreanBack > #TitleButtonSpace{
+        position:absolute;
+        display: flex;
+        top:45%;
+        left:15%;
+        height:30%;
+        width:70%;
+        background-color: transparent;
+        color: var(--green-color);
+    }
 
-.button-enter-to{
-    opacity:1;
-}
+    #TitleButtonSpace > .TitleButton{
+        position:relative;
+        margin-left:5%;
+        margin-right:5%;
+        height:100%;
+        width:calc(70% / 3);
+        background-color: var(--bg-color);
+    }
 
-.button-enter-active{
-    transition:1s;
-}
+    .TitleButton > .TitleButtonIcon{
+        position:absolute;
+        font-size:8vw;
+        top:0%;
+        left:0%;
+        height:70%;
+        width:100%;
+        text-align: center;
+    }
+
+    .TitleButton > .TitleButtonText{
+        position:absolute;
+        font-size:3vw;
+        top:70%;
+        left:0%;
+        height:30%;
+        width:100%;
+        text-align: center;
+    }
+
+
+    .whiteString {
+        color:var(--word-color);
+    }
+
+    .greenString {
+        color:var(--green-color);
+    }
+
+    .move-transition {
+        transition: 2s;
+    }
+
+
+
+    .extract-enter-active,
+    .extract-leave-active{
+        transition:2s;
+    }
+
+    .extract-enter-to,
+    .extract-leave-from{
+        opacity:1;
+    }
+
+    .extract-enter-from,
+    .extract-leave-to{
+        opacity:0;
+    }
+
+    .sup-enter-active{
+        animation-name: appear-sup;
+        animation-duration: 3s;
+    }
+
+    @keyframes appear-sup {
+        0% {
+            font-size: 0vw;
+        }
+        70%{
+            font-size: 0vw;
+            left:calc(55.3vw - 2.5vw);
+            top:30%;
+        }
+        100%{
+            font-size: 5vw;
+            left:55.3vw;
+            font-size: 5vw;
+            top:15%;
+        }
+    }
+
+
+    .button-enter-from{
+        opacity:0;
+    }
+
+    .button-enter-to{
+        opacity:1;
+    }
+
+    .button-enter-active{
+        transition:1s;
+    }
 
 </style>
 

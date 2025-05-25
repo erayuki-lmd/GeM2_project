@@ -1,9 +1,12 @@
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
   --bg-color: #333;
-  --word_color: #DDD;
-  --green_color: rgb(58, 247, 118);
-  --pink_color:pink;
+  --word-color: #DDD;
+  --green-color: rgb(58, 247, 118);
+  --pink-color:rgb(255, 177, 190);
+  --blue-color:rgb(128, 221, 255);
+  --orange-color:rgb(253, 219, 107);
+  --purple-color:rgb(237, 156, 255);
 }
 
 *,
@@ -16,11 +19,8 @@
 
 body {
   min-height: 100vh;
-  /* color: var(--color-text); */
+  color: var(--word-color);
   background: var(--bg-color);
-  transition:
-    color 0.5s,
-    background-color 0.5s;
   line-height: 1.6;
   font-family:
     Inter,
@@ -35,7 +35,7 @@ body {
     'Droid Sans',
     'Helvetica Neue',
     sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
