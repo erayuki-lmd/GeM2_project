@@ -1,6 +1,7 @@
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
   --bg-color: #333;
+  --bib-color: #AAA;
   --word-color: #DDD;
   --green-color: rgb(58, 247, 118);
   --pink-color:rgb(255, 177, 190);

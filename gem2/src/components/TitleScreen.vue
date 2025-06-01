@@ -61,6 +61,11 @@
 
     }
 
+    function goGit() {
+        const url = "https://github.com/erayuki-lmd/Generalized_Stylized_Motion_Generation_Method/tree/main";
+        window.location.href = url;
+    }
+
     window.onload = Starting;
 </script>
 
@@ -126,7 +131,7 @@
 
         <div id="TitleButtonSpace">
             <Transition name="button">
-                <div v-if="buttonFlag[0]" class="TitleButton">
+                <div v-if="buttonFlag[0]" class="TitleButton" @click="goGit">
                     <div class="TitleButtonIcon">
                         <i class="bi bi-github"></i>
                     </div>
