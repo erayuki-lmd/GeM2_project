@@ -11,6 +11,7 @@
         <div id="paperTitle">
             ~ Generalizing Stylized Motion Generation Method by Introducing Metadata-Independent Learning and Unified Multiple Motion Dataset ~
         </div>
+        <img src="@/assets/img/abst.png" width="100%">
         <div id="abstructText">
                 GeM&sup2 aims to extend the applicability of stylized motion generation methods to be robust for large and diverse motions akin to those found in real-world data.
                 Specifically, we introduce metadata-independent learning alongside style-focused learning, thereby enabling training from motions absent in motion-style datasets.
@@ -26,16 +27,21 @@
         position:relative;
         margin-top:10px;
         left:20px;
+        width: calc(100% - 20px);
     }
     #paperTitle{
         font-size: 1.2rem;
         font-weight: bold;
+        margin-bottom:10px;
     }
     #abstructText{
         font-size: 1rem;
         opacity:0.8;
+        margin-bottom:10px;
     }
-
+    img {
+        opacity: 0.95;
+    }
 
 </style>
 

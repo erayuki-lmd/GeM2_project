@@ -4,44 +4,46 @@ import { onMounted, ref } from "vue";
 import BannerScreen from "./components/BannerScreen.vue";
 import TitleScreen from './components/TitleScreen.vue';
 import AbstructScreen from './components/AbstructScreen.vue';
+import MethodScreen from './components/MethodScreen.vue';
 import ResultScreen from './components/ResultScreen.vue';
 import MovieScreen from './components/MovieScreen.vue';
 import BibtexScreen from './components/BibtexScreen.vue';
 
-onMounted(() => {
-  const titleElem = document.querySelector('#title');
-  if (titleElem !== null){
-    const titleProp = titleElem.getBoundingClientRect();
-    titleBottom = titleProp.bottom - 5;
-  }else{
-    titleBottom = 0;
-  }
-});
 
 var titleBottom: number = 1000000;
 var bannerBool = ref<boolean>(false);
 
-window.addEventListener("scroll", () => {
+function getY() {
+  let titleElem = document.querySelector('#title');
+  if (titleElem !== null){
+    let titleProp = titleElem.getBoundingClientRect();
+    titleBottom = titleProp.bottom - 5;
+  }else{
+    titleBottom = 0;
+  }
+};
+
+function scrollEvent() {
   if (window.scrollY > titleBottom) {
     bannerBool.value = true;
   }else{
     bannerBool.value = false;
   }
+};
+
+
+window.onscroll =  scrollEvent;
+
+onMounted(() => {
+  getY();
 });
 
-// const appElem = document.querySelector('#app');
-// if (appElem !== null){
-//   const bodyElem = appElem.querySelector('#body');
-//   console.log(bodyElem);
-// }
-// if (bodyElem !== null){
-//   const titleBottom = bodyElem.getBoundingClientRect();
-//   console.log("!!!!!!!!!!!!");
-//   console.log(titleBottom);
-//   console.log("!!!!!!!!!!!!");
-// }else{
-//   console.log(bodyElem);
-// }
+window.addEventListener('resize', () => {
+  getY();
+  scrollEvent();
+});
+
+
 </script>
 
 <template>
@@ -49,13 +51,13 @@ window.addEventListener("scroll", () => {
     <TitleScreen />
   </div>
   <div id="body">
-    <div id="tmpp">
-      <AbstructScreen />
-    </div>
-    <div id="padding"></div>
-    <ResultScreen />
+    <AbstructScreen/>
     <div id="padding"></div>
     <MovieScreen />
+    <div id="padding"></div>
+    <MethodScreen />
+    <div id="padding"></div>
+    <ResultScreen />
     <div id="padding"></div>
     <BibtexScreen />
     <div id="padding"></div>
@@ -92,6 +94,7 @@ window.addEventListener("scroll", () => {
   height:100vh;
   margin-left:auto;
   margin-right:auto;
+  max-width:900px;
 }
 
 #padding {
@@ -100,7 +103,7 @@ window.addEventListener("scroll", () => {
   width:100%;
 }
 
-@media screen and (orientation: landscape) {
+@media (min-width: 900px) {
   #title {
     margin-top: 0px;
   }
@@ -115,6 +118,22 @@ window.addEventListener("scroll", () => {
 .banner-enter-from,
 .banner-leave-to{
   opacity:0;
+}
+
+.banner-enter-active,
+.banner-leave-active{
+  transition:1s;
+}
+
+
+.banner-enter-to,
+.banner-leave-from{
+  left:-100vw;
+}
+
+.banner-enter-from,
+.banner-leave-to{
+  left:0vw;
 }
 
 .banner-enter-active,

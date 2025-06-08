@@ -30,12 +30,12 @@
         position:relative;
         margin-top:10px;
         left:20px;
-        width:auto;
         height:auto;
         background-color: var(--bib-color);
         border-radius: 5px;
         color: var(--bg-color);
         padding:10px;
+        width: calc(100% - 20px);
     }
     #bibSpace > #bibText{
         position:relative;

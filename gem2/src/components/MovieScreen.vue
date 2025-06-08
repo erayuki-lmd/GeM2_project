@@ -8,7 +8,9 @@
 <template>
     <SubTitle :color=iconColor subtitle="Demo Movie"/>
     <div id="mainText">
-        Comming Soon...!
+        <div id="movieArea">
+            <iframe width=100% height="100%" src="https://www.youtube.com/embed/C8TxsknJC6Q?si=KScFsagSmNayG6a8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
     </div>
 </template>
 
@@ -18,14 +20,11 @@
         position:relative;
         margin-top:10px;
         left:20px;
+        width: calc(100% - 20px);
     }
-    #paperTitle{
-        font-size: 1.2rem;
-        font-weight: bold;
-    }
-    #abstructText{
-        font-size: 1rem;
-        opacity:0.8;
+    #movieArea{
+        width:100%;
+        aspect-ratio: 16 / 9;
     }
 
 

@@ -26,7 +26,7 @@
     #subTitleSpace{
         position:relative;
         top:0;
-        min-height:40px;
+        min-height:25px;
         width:auto;
     }
 
@@ -34,23 +34,45 @@
         position:absolute;
         top:0;
         left:0;
-        font-size: 30px;
+        font-size: 20px;
         rotate: -30deg;
     }
 
     #subTitleSpace > #Icon_2{
         position:absolute;
         top:13px;
-        left:30px;
-        font-size: 20px;
+        left:20px;
+        font-size: 10px;
         rotate: 30deg;
     }
 
     #subTitleSpace > #Text{
         position:absolute;
         top:0px;
-        left:60px;
-        font-size: 30px;
+        left:40px;
+        font-size: 20px;
         font-weight: bold;
     }
+
+    
+    @media (min-width: 900px) {
+
+    #subTitleSpace{
+        min-height:40px;
+    }
+
+    #subTitleSpace > #Icon_1{
+        font-size: 30px;
+    }
+
+    #subTitleSpace > #Icon_2{
+        left:30px;
+        font-size: 20px;
+    }
+
+    #subTitleSpace > #Text{
+        left:60px;
+        font-size: 30px;
+    }
+}
 </style>

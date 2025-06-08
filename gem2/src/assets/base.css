@@ -8,6 +8,7 @@
   --blue-color:rgb(128, 221, 255);
   --orange-color:rgb(253, 219, 107);
   --purple-color:rgb(237, 156, 255);
+  font-size: 12px;
 }
 
 *,
@@ -36,8 +37,13 @@ body {
     'Droid Sans',
     'Helvetica Neue',
     sans-serif;
-  font-size: 16px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@media (min-width: 900px) {
+  :root{
+  font-size: 16px;
+  }
 }

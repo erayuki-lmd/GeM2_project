@@ -18,6 +18,7 @@
         position:relative;
         margin-top:10px;
         left:20px;
+        width: calc(100% - 20px);
     }
     #paperTitle{
         font-size: 1.2rem;
